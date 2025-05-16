@@ -14,10 +14,10 @@ function App() {
 
   return (
     <Router>
-      <div className="min-h-screen bg-gray-100">
-        <nav className="bg-blue-600 p-4 text-white">
+      <div className="min-h-screen bg-neutral-900">
+        <nav className="bg-blue-600 p-4">
           <div className="container mx-auto flex justify-between">
-            <Link to="/" className="text-lg font-bold">Interview Manager</Link>
+            <Link to="/" className="text-lg font-bold">Interview Tracker App</Link>
             <div>
               {token ? (
                 <>

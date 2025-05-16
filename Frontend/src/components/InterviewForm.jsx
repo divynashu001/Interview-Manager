@@ -30,6 +30,7 @@ function InterviewForm() {
         }
       };
       fetchInterview();
+      setFormData("")
     }
   }, [id]);
 
@@ -46,7 +47,7 @@ function InterviewForm() {
           headers: { Authorization: `Bearer ${token}` },
         });
       }
-      navigate("/interviews");
+      navigate("/");
     } catch (err) {
       setError(err.response?.data?.message || "Operation failed");
     }
